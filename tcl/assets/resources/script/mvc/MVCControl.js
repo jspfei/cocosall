@@ -44,22 +44,30 @@ cc.Class({
         cc.info("this.b_panel.lastBtn.name ",this.b_panel.lastBtn.name);
         cc.info("this.b_panel.curBtn.name ",this.b_panel.curBtn.name);
         cc.info("this.b_panel.nextBtn.name ",this.b_panel.nextBtn.name);
-        var txt = ""
+        var txtUrl = ""
         if(event.target.name == this.b_panel.lastBtn.name){
-            txt = "上一页"
+            txtUrl = "txt/1.txt"
         }   
         else if(event.target.name == this.b_panel.curBtn.name){
-            txt = "当前页"
+            txtUrl = "当前页"
         }
         else if(event.target.name == this.b_panel.nextBtn.name){
-            txt = "下一页"
+            txtUrl = "txt/2.txt"
         }
          
-        this.setContentText(txt);
+       
+        this.readTxt(txtUrl);
     },
 
     setContentText:function(str){
         this.c_panel.content.string = str;
+    },
+    readTxt:function(url){
+    	var self = this;
+        var url = cc.url.raw(url);
+        cc.loader.load(url,function(err,data){              
+             self.setContentText(data)
+        }.bind(this));
     },
     
     onBtnTaobaoClicked:function(){
