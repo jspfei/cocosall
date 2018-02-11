@@ -30,6 +30,9 @@ cc.Class({
             case "4":
                 self.playMusic(); //恢复音乐
                 break;
+            case "5":
+                self.openMVCScene(); //MVC
+                break;
             default:
                 break;
 
@@ -48,6 +51,11 @@ cc.Class({
     },
     resumeMusic:function(){
         cc.poker.audio.resumeBGM(); 
+    },
+    openMVCScene:function(){
+        cc.director.preloadScene("mvc", function () {  
+            cc.director.loadScene("mvc");
+        });
     }
     // called every frame, uncomment this function to activate update callback
     // update: function (dt) {
