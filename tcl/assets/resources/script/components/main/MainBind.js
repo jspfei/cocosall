@@ -33,10 +33,16 @@ cc.Class({
             case "5":
                 self.openMVCScene(); //MVC
                 break;
+            case "6":
+                self.showWc();
+                break;
             default:
                 break;
 
         }
+    },
+    showWc:function(){
+        cc.vv.wc.show('正在返回游戏房间');
     },
 
     openImageLoaderPrefab:function(){
