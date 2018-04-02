@@ -1,0 +1,25 @@
+
+2、打包Android 版本 
+	构建项目
+
+	cmd 命令行
+	cd 到 E:\work\poker 执行以下代码：
+
+  node version_generator.js -v 1.0.4 -u http://update.lai2ba.com/game-update/poker/android/remote-assets/ -s build/jsb-default
+-d remote-assets/  
+
+注：1.0.4 表示 UPGRADE_VERSION 一样；
+    http://update.lai2ba.com/game-update/poker/android/remote-assets/ 为服务器最新资源代码存放地址
+
+	成功以后，会在 E:\work\poker\remote-assets 下重新生成 project.manifest 和 version.manifest
+	 
+	客户端更新 ：将project.manifest 和 version.manifest 两个文件复制到 E:\work\poker\build\android\upgrade 下
+	服务器端更新：
+		1 创建新文件夹 remote-assets
+		2 将project.manifest 和 version.manifest 复制到 remote-assets中
+		3 将project.manifest 复制到E:\work\poker\build\jsb-default\res\raw-assets 目录下替换原来的文件
+		4 将 E:\work\poker\build\jsb-default 目录下 res 和 src 两个文件夹复制到remote-assets中
+		5 将  remote-assets 打包成 remote-assets.zip 文件，
+		6 将 remote-assets.zip放在 另一个 用资源版本号命名的文件夹中如 “1.0.4”发个服务器，让服务器放在 http://update.lai2ba.com/game-update/poker/android/ 文件夹下替换
+
+如果是本地Androidstuido 测试热更新，要将E:\work\poker\build\jsb-default 中 main.js 替换成 E:\work\poker下的main.js 
