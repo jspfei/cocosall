@@ -44,6 +44,9 @@ cc.Class({
             case "6":
                 self.showWc();
                 break;
+            case "7":
+                cc.director.loadScene("template");
+                break;
             default:
                 break;
 
