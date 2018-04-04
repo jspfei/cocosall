@@ -10,7 +10,15 @@ cc.Class({
 
     // use this for initialization
     onLoad: function () {
-        
+        if(!cc.sys.isNative && cc.sys.isMobile){
+            var cvs = this.node.getComponent(cc.Canvas);
+            cvs.fitHeight = true;
+            cvs.fitWidth = true;
+        }
+        if(!cc.vv){
+            cc.director.loadScene("loading");
+            return;
+        }
     },
     onBtnCtrlClick: function (event, customEventData) {
 

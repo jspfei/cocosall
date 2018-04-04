@@ -13,11 +13,16 @@ cc.Class({
        btnspanel:{
            default:null,
            type:cc.Node
-       }
+       },
+       _txtPath:"resources/"
     },
 
     // use this for initialization
     onLoad: function () {
+        if( cc.vv ==null){
+            cc.director.loadScene("start");
+            return;
+        }
         this.t_panel = this.tabspanel.getComponent("TabsPanel"); 
         this.t_panel.title.string = "武炼巅峰" 
 
@@ -46,13 +51,13 @@ cc.Class({
         cc.info("this.b_panel.nextBtn.name ",this.b_panel.nextBtn.name);
         var txtUrl = ""
         if(event.target.name == this.b_panel.lastBtn.name){
-            txtUrl = "txt/1.txt"
+            txtUrl = this._txtPath+"txt/1.txt"
         }   
         else if(event.target.name == this.b_panel.curBtn.name){
             txtUrl = "当前页"
         }
         else if(event.target.name == this.b_panel.nextBtn.name){
-            txtUrl = "txt/2.txt"
+            txtUrl = this._txtPath+"txt/2.txt"
         }
          
        

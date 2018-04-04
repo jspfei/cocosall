@@ -11,14 +11,7 @@ cc.Class({
         _canRetry: false,
         _storagePath: ''
     },
-
-    createAlert: function (message, callback, context) {
-        context.alertdialog = cc.instantiate(context.alertPrefab);
-        context.alertdialog.parent = cc.find("Canvas");
-        context.alertdialog.setLocalZOrder(20);
-        var item = context.alertdialog.getComponent("PokerDialog");
-        item.init(message, callback, null)
-    },
+ 
     checkCb: function (event) {
         cc.info('checkCb   Code: ' + event.getEventCode());
         var self = this;
@@ -74,58 +67,9 @@ cc.Class({
                 context.hotUpdate();
             }
             this.setPanelDemo(callback1, this, event.getEventCode());
-        } else {
-            this.printProjectManifestExit("13")
-            var back = function (context, code) {
+        }  
 
-                if (code == jsb.EventAssetsManager.ALREADY_UP_TO_DATE) {
-                    cc.info("check", "---result   1")
-                    context.panel.info.string = "已是最新资源";
-                    context.updateUIs.active = false;
-                    context.panel.byteProgress.progress = 1;
-
-                } else if (code == jsb.EventAssetsManager.ERROR_DOWNLOAD_MANIFEST ||
-                    code == jsb.EventAssetsManager.ERROR_PARSE_MANIFEST) {
-                    cc.info("check", "---result   2")
-                    if (cc.sys.os == cc.sys.OS_ANDROID || cc.sys.os == cc.sys.OS_IOS) {
-                        //调用android sdk 开始微信登录认证
-                        cc.info("check", "---jump alert", context)
-                        context.panel.info.string = "网络连接失败，请检查网络！";
-                        context.panel.byteProgress.progress = 1;
-                        context.updateUIs.active = true;
-                        var callback = function () {
-                            context.onLoad();
-                        }
-                        cc.info("check", "---jump createAlert")
-                        context.createAlert("网络连接失败，请重试！", callback, context)
-
-                    } else {
-                        context.panel.info.string = "网络连接失败，请检查网络！";
-                        context.panel.byteProgress.progress = 1;
-                        context.updateUIs.active = false;
-                    }
-
-                } else {
-                    cc.info("check", "---result  3")
-                }
-
-            }
-            this.setPanelDemo(back, this, event.getEventCode());
-            // this.updateUIs.active = false;
-        }
-
-    },
-
-    showCurrentResVesion: function () {
-        var manifest = this._am.getLocalManifest();
-        cc.info('-------------------showCurrentResVesiont----------------------')
-        if (manifest != null) {
-            cc.info(" showCurrentResVesion   getVersion ", manifest.getVersion());
-            cc.poker.UPGRADE_VERSION = manifest.getVersion();
-        }
-        this.panel.upgrade_version.string = "(" + cc.poker.UPGRADE_VERSION + ")";
-    },
-
+    }, 
 
     updateCb: function (event) {
         var needRestart = false;

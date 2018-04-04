@@ -21,13 +21,12 @@ function urlParse(){
 }
 
 function initMgr(){
-    cc.vv = {};
-   
-    var Utils = require("Utils");
-    cc.vv.utils = new Utils();
-   
-    
-    cc.args = urlParse();
+    if(cc.vv == null){
+        cc.vv = {}; 
+        var Utils = require("../utils/Utils");
+        cc.vv.utils = new Utils(); 
+        cc.args = urlParse();
+    } 
 }
     
 
@@ -35,8 +34,7 @@ function initMgr(){
 cc.Class({
     extends: cc.Component,
 
-    properties: {
-       
+    properties: { 
 
         loadingProgess:cc.Label,
     },

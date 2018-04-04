@@ -24,6 +24,15 @@ cc.Class({
         this.initMgr();
     },
     initMgr:function(){
+        if(!cc.sys.isNative && cc.sys.isMobile){
+            var cvs = this.node.getComponent(cc.Canvas);
+            cvs.fitHeight = true;
+            cvs.fitWidth = true;
+        }
+        if(!cc.vv){
+            cc.director.loadScene("start");
+            return;
+        }
         if(cc.poker == null){
             /**
              * 增加了游戏全局变量控制，增加了 cc.poker.gamestatus 参数，可选值：ready|notready|playing
