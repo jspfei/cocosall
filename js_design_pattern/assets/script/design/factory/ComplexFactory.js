@@ -61,6 +61,7 @@ BicycleChild.prototype.createBicycle = function () {
         B: B
     }
 }
+
 cc.Class({
     extends: cc.Component,
 
@@ -81,8 +82,13 @@ cc.Class({
     onLoad: function () {
 
     },
-    init:function(lbl){
+    init:function(fun){
+        var lbl = ""
         var childClass = new BicycleChild("隆恩");
-        lbl.string = childClass.name +"   "+ childClass.sellBicycle("model");
-    }
+        lbl = childClass.name +"   "+ childClass.sellBicycle("model");
+        if(fun)
+            fun(lbl)
+    },
+   
+
 });

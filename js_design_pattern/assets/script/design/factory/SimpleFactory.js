@@ -20,11 +20,14 @@ cc.Class({
     onLoad: function () {
 
     },
-    init:function(lbl){
+    init:function(fun){
+        var lbl = ""
         var p1 = new createPreson("longen","28","男");
         var p2 = new createPreson("tugenhua","27","女");
-        lbl.string = p1.name +" "+p1.age+" "+p1.sex+"   "+p1.sayName();
-        lbl.string =lbl.string +"\n"+ p2.name +" "+p2.age+" "+p2.sex+"   "+p2.sayName();
+        lbl = p1.name +" "+p1.age+" "+p1.sex+"   "+p1.sayName();
+        lbl =lbl +"\n"+ p2.name +" "+p2.age+" "+p2.sex+"   "+p2.sayName();
+        if(fun)
+            fun(lbl)
     },
   
 
