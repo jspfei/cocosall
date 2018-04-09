@@ -26,21 +26,13 @@ cc.Class({
         this.tips.string = "";
         var temp = ""
         cc.log("----------------",event.target.name);
-        if(event.target.name == "btn_simple"){
-            
+        if(event.target.name == "btn_simple"){            
             temp = "SimpleFactory"
         }else if(event.target.name == "btn_complex")
-        { 
-        //     var ComplexFactory =  require("ComplexFactory");
-        //     var complexFactory = new ComplexFactory();
-        //     complexFactory.init(this.tips); 
-            temp = "ComplexFactory"
-
-        }else if(event.target.name == "btn_singeton")
         {
-            // var Singleton =  require("Singleton");
-            // var singleton = new Singleton();
-            // singleton.init(this.tips);  
+            temp = "ComplexFactory"
+        }else if(event.target.name == "btn_singeton")
+        {         
             temp = "Singleton"
         }else if(event.target.name == "btn_proxy")
         { 
