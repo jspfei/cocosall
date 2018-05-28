@@ -1,5 +1,5 @@
 
-var topicAry =["使用ImageLoader加载图片","播放音乐","暂停音乐","恢复音乐","MVC","等待连接","模板","小羊"]; 
+var topicAry =["使用ImageLoader加载图片","播放音乐","暂停音乐","恢复音乐","MVC","等待连接","模板","小羊","动态列表"]; 
 
 cc.Class({
     extends: cc.Component,
@@ -41,13 +41,13 @@ cc.Class({
             let temp = item.getComponent("BtnBind"); 
             cc.info("str: "+i+" "+topicAry[i])
             temp.lbl.string =topicAry[i];
-            item.active = true; 
+            item.active = true;
+            //按钮绑定事件 和 customEventData 
             this._initButtonHandler(temp.btn,i+1+"");
             item.parent = this.content_layout;
         }    
     },
-    _initButtonHandler:function(btn,customEventData){
-        // var btn = cc.find(btnPath);
+    _initButtonHandler:function(btn,customEventData){        
          cc.info("initButtonHandler   btn ",btn);
          cc.vv.utils.addClickEvent(btn,this.node,"MainBind","onBtnClicked",customEventData);   
      },
@@ -61,6 +61,7 @@ cc.Class({
        this.onSHanlder("6",this.showWc.bind(this));
        this.onSHanlder("7",this.jumpTempalte.bind(this)); 
        this.onSHanlder("8",this.jumpSheep.bind(this));
+       this.onSHanlder("9",this.jumpDynamic.bind(this));
     },
 
     onSHanlder:function(key,handler){
@@ -81,6 +82,10 @@ cc.Class({
 
     jumpTempalte:function(){
         cc.director.loadScene("template");
+    },
+
+    jumpDynamic:function(){
+        cc.director.loadScene('dynamic');
     },
 
     showWc:function(){
