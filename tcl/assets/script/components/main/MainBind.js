@@ -1,4 +1,4 @@
-
+//先添加栏目，直接添加栏目名 ,然后在 _initBtnHandlers 中添加对应的调用房间
 var topicAry =["使用ImageLoader加载图片","播放音乐","暂停音乐","恢复音乐","MVC","等待连接","模板","小羊","动态列表"]; 
 
 cc.Class({
@@ -52,7 +52,7 @@ cc.Class({
          cc.vv.utils.addClickEvent(btn,this.node,"MainBind","onBtnClicked",customEventData);   
      },
 
-    _initBtnHandlers:function(){
+    _initBtnHandler:function(){
        this.onSHanlder("1",this.openImageLoaderPrefab.bind(this));
        this.onSHanlder("2",this.playMusic.bind(this));
        this.onSHanlder("3",this.pauseMusic.bind(this) );
