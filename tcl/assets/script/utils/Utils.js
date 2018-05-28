@@ -14,13 +14,15 @@ cc.Class({
         // ...
     },
 
-    addClickEvent:function(node,target,component,handler){
+    addClickEvent:function(node,target,component,handler,customEventData){
         console.log(component + ":" + handler);
         var eventHandler = new cc.Component.EventHandler();
         eventHandler.target = target;
         eventHandler.component = component;
         eventHandler.handler = handler;
-
+        if(customEventData){
+            eventHandler.customEventData = customEventData;
+        }     
         var clickEvents = node.getComponent(cc.Button).clickEvents;
         clickEvents.push(eventHandler);
     },

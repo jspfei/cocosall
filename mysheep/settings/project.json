@@ -8,7 +8,18 @@
   },
   "collision-matrix": [
     [
+      false,
       true
+    ],
+    [
+      true,
+      false,
+      true
+    ],
+    [
+      false,
+      true,
+      false
     ]
   ],
   "design-resolution-height": 640,
@@ -17,14 +28,16 @@
   "fit-height": true,
   "fit-width": false,
   "group-list": [
-    "default"
+    "Obstacle",
+    "Player",
+    "NextPipe"
   ],
   "simulator-orientation": false,
   "simulator-resolution": {
     "height": 640,
     "width": 960
   },
-  "start-scene": "6038b949-f746-4260-9711-de2ca14d0d4f",
   "use-customize-simulator": false,
-  "use-project-simulator-setting": false
+  "use-project-simulator-setting": false,
+  "start-scene": "current"
 }

@@ -1,0 +1,55 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "DustDown",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.38461538461538464,
+  "sample": 13,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "3bf46d1b-befa-46ed-910d-c9ed1eac537d"
+            }
+          },
+          {
+            "frame": 0.07692307692307693,
+            "value": {
+              "__uuid__": "16116bfc-73f6-469a-aff2-dc955d4d98cc"
+            }
+          },
+          {
+            "frame": 0.15384615384615385,
+            "value": {
+              "__uuid__": "b3f7afcd-c7b5-4ac5-a25a-3e7f28244a2d"
+            }
+          },
+          {
+            "frame": 0.23076923076923078,
+            "value": {
+              "__uuid__": "f43d09bc-25e8-4660-980d-64bc8b6aff2d"
+            }
+          },
+          {
+            "frame": 0.3076923076923077,
+            "value": {
+              "__uuid__": "0dee6804-a282-4e07-b250-d526baee5a7a"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": [
+    {
+      "frame": 0.38461538461538464,
+      "func": "finish",
+      "params": []
+    }
+  ]
+}

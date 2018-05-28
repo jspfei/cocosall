@@ -1,0 +1,37 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "Circle",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 1.1428571428571428,
+  "sample": 14,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "rotation": [
+        {
+          "frame": 0,
+          "value": 0
+        },
+        {
+          "frame": 0.2857142857142857,
+          "value": 90
+        },
+        {
+          "frame": 0.5714285714285714,
+          "value": 180
+        },
+        {
+          "frame": 0.8571428571428571,
+          "value": 270
+        },
+        {
+          "frame": 1.1428571428571428,
+          "value": 360
+        }
+      ]
+    }
+  },
+  "events": []
+}
