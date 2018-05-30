@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "cd05697e-830c-4134-9e7a-69c3dfd19fdc",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "ArcEgg": {
+      "ver": "1.0.3",
+      "uuid": "9c80806e-278b-4e09-999b-0226dcc94c62",
+      "rawTextureUuid": "cd05697e-830c-4134-9e7a-69c3dfd19fdc",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 82,
+      "height": 118,
+      "rawWidth": 82,
+      "rawHeight": 118,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
