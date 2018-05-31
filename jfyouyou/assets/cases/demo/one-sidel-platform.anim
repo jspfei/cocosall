@@ -1,0 +1,94 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "one-sidel-platform",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 2,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "anim-platform/anmi-platform-1": {
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": -332
+            },
+            {
+              "frame": 1,
+              "value": -180
+            },
+            {
+              "frame": 2,
+              "value": -330
+            }
+          ],
+          "rotation": []
+        }
+      },
+      "anim-platform/anmi-platform-2": {
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": 11
+            },
+            {
+              "frame": 1,
+              "value": 127
+            },
+            {
+              "frame": 2,
+              "value": 17
+            }
+          ]
+        }
+      },
+      "anim-platform/anmi-platform-3": {
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": -205
+            },
+            {
+              "frame": 1,
+              "value": 16
+            },
+            {
+              "frame": 2,
+              "value": -177
+            }
+          ],
+          "rotation": [
+            {
+              "frame": 1,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "anim-platform/anmi-platform-4": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": 472
+            },
+            {
+              "frame": 1,
+              "value": -205
+            },
+            {
+              "frame": 2,
+              "value": 460
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}
