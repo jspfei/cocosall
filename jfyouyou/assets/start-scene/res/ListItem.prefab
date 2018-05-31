@@ -108,7 +108,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 100,
+      "width": 84,
       "height": 25
     },
     "_rotationX": 0,
@@ -144,10 +144,10 @@
     "_isSystemFontUsed": true,
     "_spacingX": 0,
     "_N$string": "Label sss",
-    "_N$horizontalAlign": 1,
+    "_N$horizontalAlign": 0,
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
-    "_N$overflow": 1
+    "_N$overflow": 0
   },
   {
     "__type__": "cc.Widget",
@@ -161,7 +161,7 @@
     "_target": null,
     "_alignFlags": 45,
     "_left": 30,
-    "_right": 270,
+    "_right": 286,
     "_top": 5,
     "_bottom": 10,
     "_verticalCenter": 0,

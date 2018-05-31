@@ -10,7 +10,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "box-2",
+    "_name": "Box80",
     "_objFlags": 0,
     "_parent": null,
     "_children": [],
@@ -50,8 +50,8 @@
       "width": 81,
       "height": 81
     },
-    "_rotationX": 72,
-    "_rotationY": 72,
+    "_rotationX": 0,
+    "_rotationY": 0,
     "_scaleX": 1,
     "_scaleY": 1,
     "_position": {
