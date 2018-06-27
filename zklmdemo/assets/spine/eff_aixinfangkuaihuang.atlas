@@ -1,0 +1,13 @@
+
+eff_aixinfangkuaihuang.png
+size: 64,64
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+chengxing
+  rotate: false
+  xy: 2, 2
+  size: 35, 30
+  orig: 35, 30
+  offset: 0, 0
+  index: -1
