@@ -2,7 +2,10 @@ var io = require("IOUtils");
 cc.Class({
     extends: cc.Component,
     properties: {
-        manifestUrl: cc.RawAsset,
+        manifestUrl:{
+            type:cc.Asset,
+            default:null
+        }  ,
         updateUI: cc.Prefab,
         alertPrefab: cc.Prefab,
         downPrefab: cc.Prefab,

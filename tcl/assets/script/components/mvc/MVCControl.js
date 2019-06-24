@@ -70,9 +70,10 @@ cc.Class({
     readTxt:function(url){
     	var self = this;
         var url = cc.url.raw(url);
-        cc.loader.load(url,function(err,data){              
-             self.setContentText(data)
-        }.bind(this));
+        cc.loader.load(url,(err,data) =>{
+             this.setContentText(data);
+            }       
+         );
     },
     
     onBtnTaobaoClicked:function(){

@@ -1,15 +1,27 @@
 {
-  "appKey": "",
-  "appSecret": "",
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "appBundle": false,
+  "baidugame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "testappid",
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "encryptJs": true,
   "excludeScenes": [],
-  "includeAnySDK": false,
+  "fb-instant-games": {},
   "includeSDKBox": false,
   "inlineSpriteFrames": true,
   "inlineSpriteFrames_native": true,
-  "jailbreakPlatform": false,
   "md5Cache": false,
   "mergeStartScene": false,
-  "oauthLoginServer": "",
   "optimizeHotUpdate": false,
   "orientation": {
     "landscapeLeft": true,
@@ -18,9 +30,20 @@
     "upsideDown": false
   },
   "packageName": "org.cocos2d.tcl",
-  "privateKey": "",
-  "renderMode": "0",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait",
+    "zip": false
+  },
   "startScene": "d082f953-c25e-4f71-a9e4-dbe0af2b2315",
   "title": "tcl",
-  "webOrientation": "auto"
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "f801b164-0f88-49",
+  "zipCompressJs": true
 }

@@ -1,11 +1,4 @@
 {
-  "cocos-analytics": {
-    "appID": "13798",
-    "appSecret": "959b3ac0037d0f3c2fdce94f8421a9b2",
-    "channel": "",
-    "enable": false,
-    "version": ""
-  },
   "collision-matrix": [
     [
       true
@@ -26,5 +19,10 @@
   },
   "start-scene": "6038b949-f746-4260-9711-de2ca14d0d4f",
   "use-customize-simulator": false,
-  "use-project-simulator-setting": false
+  "use-project-simulator-setting": false,
+  "cocos-analytics": {
+    "enable": false,
+    "appID": "13798",
+    "appSecret": "959b3ac0037d0f3c2fdce94f8421a9b2"
+  }
 }

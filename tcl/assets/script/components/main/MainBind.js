@@ -30,9 +30,8 @@ cc.Class({
             cc.director.loadScene("loading");
             return;
         }
-        this._handlerAry = {};
-        this._initBtnHandlers();
-
+        this._handlerAry = {};    
+        this._initBtnHandler();
         this._initContentLayout();
     },
     _initContentLayout:function(){
