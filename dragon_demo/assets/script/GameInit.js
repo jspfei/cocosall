@@ -7,7 +7,11 @@ cc.Class({
 
     // LIFE-CYCLE CALLBACKS:
 
-    // onLoad () {},
+    onLoad () {
+        if (cc.g_start){
+            cc.g_start.initView();
+        }
+    },
 
     start () {
 

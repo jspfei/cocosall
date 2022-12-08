@@ -1,7 +1,6 @@
 window.GlobalSDKManager = null;
 var SDKManager = cc.Class({
-    name: "SDKManager",
-    extends: CustomEvent,
+    name: "SDKManager", 
 
     statics: {
         instance: null
@@ -12,7 +11,9 @@ var SDKManager = cc.Class({
     log(str) {
         console.log("["  + "]" + str);
     },
-
+    setup() {
+        window.GlobalSDKManager = this;
+    },
 
 });
 

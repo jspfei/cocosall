@@ -1,36 +1,35 @@
-// Learn cc.Class:
-//  - https://docs.cocos.com/creator/manual/en/scripting/class.html
-// Learn Attribute:
-//  - https://docs.cocos.com/creator/manual/en/scripting/reference/attributes.html
-// Learn life-cycle callbacks:
-//  - https://docs.cocos.com/creator/manual/en/scripting/life-cycle-callbacks.html
+var UIComm_Frame = require("UIComm_Frame")
 
 cc.Class({
     extends: cc.Component,
 
     properties: {
-        // foo: {
-        //     // ATTRIBUTES:
-        //     default: null,        // The default value will be used only when the component attaching
-        //                           // to a node for the first time
-        //     type: cc.SpriteFrame, // optional, default is typeof default
-        //     serializable: true,   // optional, default is true
-        // },
-        // bar: {
-        //     get () {
-        //         return this._bar;
-        //     },
-        //     set (value) {
-        //         this._bar = value;
-        //     }
-        // },
+        _panelName: "",
+        _panelTF: null,
+        _UIRootGameObject: null,
+        _isInited: false,
+        _isShow: false,
+        _isHasShowEffect: false,
+        _creatObjList: [],
+        _getAsseteList: [],
+        _frame: UIComm_Frame,
+        _isInit: false,
+
+        panelName: {
+            set: function (value) {
+                this._panelName = value;
+            },
+            get: function () {
+                return this._panelName;
+            }
+        },
     },
 
     // LIFE-CYCLE CALLBACKS:
 
     // onLoad () {},
 
-    start () {
+    start() {
 
     },
 
