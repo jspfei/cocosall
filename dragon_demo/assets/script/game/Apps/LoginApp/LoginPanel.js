@@ -1,7 +1,7 @@
- 
+var UIPanelBase = require("UIPanelBase");
 
 cc.Class({
-    extends: cc.Component,
+    extends: UIPanelBase,
 
     properties: {
         _panelName: {
@@ -13,11 +13,17 @@ cc.Class({
 
     // LIFE-CYCLE CALLBACKS:
 
-    // onLoad () {},
+    onLoad () {},
 
     start () {
-
+        let LoginManager = require("LoginManager");
+        LoginManager.instance.setView(self);
+      
     },
 
+    showLoginView(){
+
+
+    }
     // update (dt) {},
 });

@@ -1,5 +1,5 @@
 var UIComm_Frame = require("UIComm_Frame")
-
+var Handler = require("Handler");
 cc.Class({
     extends: cc.Component,
 
@@ -23,15 +23,49 @@ cc.Class({
                 return this._panelName;
             }
         },
-    },
 
-    // LIFE-CYCLE CALLBACKS:
-
-    // onLoad () {},
+        closeBtnClickCallBack:Handler,
+        _frameCloseBtnClickHandler:Handler,
+    }, 
 
     start() {
 
     },
 
-    // update (dt) {},
+    init(root){
+
+    },
+
+    show(uiParam) {
+
+    },
+
+    showPanelEffect(){
+
+    },
+
+    creatPrefabEnemyObj(prefabPatch,callBackHandler) {
+
+    },
+
+    getAsstet(url, type, callBackHandler) {
+
+    },
+
+    turnBackPrefabObjToPool(prefabPatch,obj){
+
+    },
+
+    closeBtnClick(){
+
+    },
+
+    close(){
+
+    },
+
+    onDestroy(){
+        
+    }
+
 });
