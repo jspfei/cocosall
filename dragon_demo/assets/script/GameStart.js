@@ -29,10 +29,7 @@ cc.Class({
         AssetModelFactory.instance.createEnemyAsyn(ResPatchManager.instance.LoginPanel, Handler.create(self, (obj) => {
             if (obj != null) {
                 obj.parent = cc.find("Canvas");
-                self._loginPanel = obj;
-
-
-
+                self._loginPanel = obj; 
                 self.initLogin(); 
             }
             //测试
@@ -43,6 +40,7 @@ cc.Class({
     init() {
 
     },
+  
     initLogin() {
         let LoginManager = require("LoginManager");
         LoginManager.instance.init();

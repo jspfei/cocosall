@@ -13,7 +13,7 @@
         let self = this;
         self.keystore.push(key)
         self.datastore.push(value);
-        self._len ++;
+        self._len++;
     },
 
     find(key){

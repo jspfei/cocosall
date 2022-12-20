@@ -1,6 +1,7 @@
  var LoginPanel = require("LoginPanel") 
  var HttpManager = require("HttpManager"); 
 var Handler = require("Handler");
+const GameGlobleDataManager = require("GameGlobleDataManager");
 /** 
  * 使用单例模式定义
  * 
@@ -77,6 +78,32 @@ var LoginManager = cc.Class({
 
 
         
+        //加载配置数据
+        self.analysisTempData();
+    },
+
+    analysisTempData(){
+        let self = this;
+        if(!GameGlobleDataManager.instance.isInitCompleteBln)  {
+            GameGlobleDataManager.instance.setup();
+            GameGlobleDataManager.instance.initStep(Handler.create(self, self.analysisTempDataComplete));
+        }else {
+            self.realSwitchScene() 
+        }
+        //其他
+    },
+
+    analysisTempDataComplete(){
+        let self = this;
+        self.realSwitchScene();
+    },
+
+    realSwitchScene(){
+        //其他操作
+
+
+        //切换到其他界面
+        console.log("[进入界面】 > key > ")
 
     },
     // onLoad () {}, 
