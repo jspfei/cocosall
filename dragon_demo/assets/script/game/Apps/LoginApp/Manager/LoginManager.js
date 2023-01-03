@@ -76,10 +76,19 @@ var LoginManager = cc.Class({
     init(){
         let self = this;
 
+        let GameEnterManager = require("GameEnterManager")    
+        GameEnterManager.instance.init();
 
+        self.initGameEnter();
         
         //加载配置数据
         self.analysisTempData();
+    },
+
+    initGameEnter(){
+          //异步监听成功以后 调用
+          let GameEnterManager = require("GameEnterManager")    
+          GameEnterManager.instance.setup();
     },
 
     analysisTempData(){

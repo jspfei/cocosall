@@ -85,8 +85,7 @@ var GameGlobleDataManager = cc.Class({
                 let self = this;
                 self._isParseIngBln = false; 
                 self._currParseCount ++;
-
-
+                
         },
         initStepComplete() {
                 let self = this;
