@@ -17,7 +17,12 @@ var ResPatchManager = cc.Class({
                 return "Level_csv"
             }
         },
-
+        RoomToastView:{
+            get:function(){
+                
+                return "Prefab/Toast/RoomToastView";
+            },
+        } ,
        
     }, 
     getCSVPatch(name){
