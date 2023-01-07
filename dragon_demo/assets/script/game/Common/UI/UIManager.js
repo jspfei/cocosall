@@ -31,7 +31,7 @@ var UIManager = cc.Class({
  
 
     showOtherPlayerPanel(userId) {
-
+        
     },
 
     showPlayerHead(headUrl, defSprite){
