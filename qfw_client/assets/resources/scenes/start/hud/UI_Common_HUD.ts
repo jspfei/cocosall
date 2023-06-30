@@ -3,6 +3,7 @@ import { UIController } from '../../../qfw/base/UIController';
 import { UILayer,UIMgr } from '../../../qfw/base/UIMgr';
 import { UILayout_Common_HUD } from './UILayout_Common_HUD';
 import { DemoMgr } from '../DemoMgr';
+import { UI_SkyboxSetting } from '../../../common/skybox/UI_SkyboxSetting';
 const { ccclass, property } = _decorator;
 
 @ccclass('UI_Common_HUD')
@@ -17,7 +18,7 @@ export class UI_Common_HUD  extends UIController {
 
     protected onCreated() {
         this.onButtonEvent(this.layout.btnSkyboxSetting, () => {
-            //UIMgr.inst.showUI(UI_SkyboxSetting);
+            UIMgr.inst.showUI(UI_SkyboxSetting);
         });
 
         this.onButtonEvent(this.layout.btnHome, () => {
