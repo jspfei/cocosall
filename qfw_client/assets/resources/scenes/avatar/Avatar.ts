@@ -52,7 +52,7 @@ export class Avatar extends Component {
             this.bodyparts[part] = node
             let meshNode = find('RootNode/' + partName, node)
             let albedoMapName = AvatarBodyparts.getNameOfBodypart(part,suitId) +"_d"
-            console.log("---textures ----"+albedoMapName)
+           
             resources.load('scenes/avatar/textures/' + albedoMapName, ImageAsset, (err, tex: ImageAsset) => {
                
                if (tex) {
