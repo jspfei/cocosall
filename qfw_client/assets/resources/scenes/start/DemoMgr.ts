@@ -22,7 +22,8 @@ export class DemoMgr  {
     constructor() {
         this._demos = [
             { title: 'Cocos Creator 3D 实用案例\nCocos Creator 3D Cases', folder: 'scenes/start', scene: 'start', icon: '' },
-           { title: '武器发光\nWeapon Glow', folder: 'scenes/weapon_glow', scene: 'weapon_glow', icon: 'preview.jpg' }
+            { title: '天空盒\nSkybox', folder: 'scenes/skybox', scene: 'skybox', icon: 'preview.jpg' },
+            { title: '武器发光\nWeapon Glow', folder: 'scenes/weapon_glow', scene: 'weapon_glow', icon: 'preview.jpg' }
        
         ]
     }
