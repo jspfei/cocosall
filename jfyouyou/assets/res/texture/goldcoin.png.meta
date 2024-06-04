@@ -1,13 +1,21 @@
 {
-  "ver": "1.0.0",
+  "ver": "2.3.7",
   "uuid": "4aa630d9-2233-41a4-838d-d6d2dca6bfcb",
+  "importer": "texture",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 80,
+  "height": 80,
+  "platformSettings": {},
   "subMetas": {
     "goldcoin": {
-      "ver": "1.0.3",
+      "ver": "1.0.6",
       "uuid": "36b9bbd2-8da6-43d6-9cb4-f89e932c8f32",
+      "importer": "sprite-frame",
       "rawTextureUuid": "4aa630d9-2233-41a4-838d-d6d2dca6bfcb",
       "trimType": "auto",
       "trimThreshold": 1,
